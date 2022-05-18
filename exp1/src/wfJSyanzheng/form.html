@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my web</title>
+    <script language="JavaScript">    ///等下  看我的   你继续  我就看着  要合并一下分支
+        window.onload=function(){
+            var regex=/^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+            var mysubmit=document.querySelector('#mysubmit');
+            mysubmit.onclick=function(){
+                var email=document.getElementsadjdhjkashdjkashdkjahskjdById('email');
+                if(email.value==""){dasyhuid h
+                    a]d;
+as;d
+                    sa;d
+                    asd ;
+                    as ;
+                    as sd;as
+                     ;d
+                    as ;
+                     a;;;
+                    alert("您没有填写邮箱地址！");
+                    return false;
+                }else if(regex.test(email.value)){
+                    alert("恭喜你，验证通过！");
+                    return true;
+                }else{
+                    alert("您填写的邮箱地址不正确！请重新填写！");
+                    return false;
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form action="" method="get" onsubmit="validate(this)">
+        姓名：<input type="text" name="username" placeholder="请输入用户名"><br>
+        密码：<input type="password" name="password" placeholder="请输入密码"><br>
+        现住址：<select>
+                 <option selected>请选择省份</option>
+                 <option>山西</option>
+                 <option>北京</option>
+              </select>
+        <select>
+            <option selected>请选择市区</option>
+            <option>太原</option>
+            <option>运城</option>
+        </select><br>
+        性别：<input type="radio" name="sex">男
+        <input type="radio" name="sex">女
+        <br>
+        手机号：<input type="text" name="phone"placeholder="请输入11位手机号"><br>
+        邮箱：<input type="text" name="email" id="email"><br><br>
+        其他信息：<textarea rows="10" cols="30"></textarea><br>
+        <input type="submit" id="mysubmit"value="提交">
+    </form>
+</body>
+</html>
